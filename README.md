@@ -9,7 +9,7 @@
   <a href="https://github.com/max10rogerio/react-ui-boilerplate/graphs/commit-activity" target="_blank">
     <img alt="Maintenance" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" />
   </a>
-  <a href="https://github.com/max10rogerio/react-ui-boilerplate/blob/master/LICENSE" target="_blank">
+  <a href="https://github.com/max10rogerio/react-ui-boilerplate/blob/master/LICENSE.md" target="_blank">
     <img alt="License: MIT" src="https://img.shields.io/github/license/max10rogerio/react-ui-boilerplate" />
   </a>
 </p>
@@ -41,6 +41,43 @@ yarn run start
 yarn run test
 ```
 
+## Run build
+
+```sh
+yarn run build
+```
+
+## Run build with local server http
+
+```sh
+yarn run build:serve
+```
+
+## Tools
+
+- [Commit Lint](https://commitlint.js.org/#/)
+- [Husky](https://github.com/typicode/husky)
+- [Axios](https://github.com/axios/axios)
+- [Typescript](https://www.typescriptlang.org/)
+- Material-UI
+  - [material-ui/core](https://material-ui.com/)
+  - [material-ui/icons](https://material-ui.com/components/material-icons/)
+- Redux
+  - [redux-toolkit](https://redux-toolkit.js.org/)
+  - [redux-sagas](https://redux-saga.js.org/)
+  - [redux-persist](https://github.com/rt2zz/redux-persist)
+  - [redux-devtools](https://github.com/reduxjs/redux-devtools)
+- [Prettier](https://prettier.io/)
+- [ESLINT](https://eslint.org/)
+- [cra-append-sw](https://github.com/tszarzynski/cra-append-sw)
+- [react-hook-form](https://react-hook-form.com/get-started)
+
+## Features
+
+- Basic configurations for start project with react, redux, material-ui and typescript
+- Light theme and dark theme
+- Check update from service work
+
 ## Author
 
 👤 **Max Rogério**
@@ -59,7 +96,7 @@ Give a ⭐️ if this project helped you!
 ## 📝 License
 
 Copyright © 2020 [Max Rogério](https://github.com/max10rogerio).<br />
-This project is [MIT](https://github.com/max10rogerio/react-ui-boilerplate/blob/master/LICENSE) licensed.
+This project is [MIT](https://github.com/max10rogerio/react-ui-boilerplate/blob/master/LICENSE.md) licensed.
 
 ***
 _This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
