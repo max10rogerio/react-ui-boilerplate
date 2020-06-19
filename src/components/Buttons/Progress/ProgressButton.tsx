@@ -7,13 +7,25 @@ import useStyles from "./styles";
 import { ProgressButtonColors } from "./index";
 
 interface Props extends ButtonProps {
+  /**
+   * Display a circular progress bar
+   */
   loading: boolean;
+  /**
+   * Disabled button
+   */
   disabled?: boolean;
+  /**
+   * Label button
+   */
   label?: string;
+  /**
+   * Color of circular progress bar
+   */
   color?: ProgressButtonColors;
 }
 
-export const ProgressButton: FC<Props> = ({ loading, disabled, label, color = "primary", ...props }) => {
+export const ProgressButton: FC<Props> = ({ loading, disabled, label = "Submit", color = "primary", ...props }) => {
   const classes = useStyles({ color });
 
   return (
@@ -26,10 +38,4 @@ export const ProgressButton: FC<Props> = ({ loading, disabled, label, color = "p
       </div>
     </div>
   );
-};
-
-ProgressButton.defaultProps = {
-  disabled: false,
-  label: "SALVAR",
-  color: "primary",
 };
