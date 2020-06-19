@@ -1,28 +1,24 @@
 {
   "name": "react-ui-boilerplate",
-  "version": "0.1.0",
+  "description": "A react boilerplate with Material-UI, Redux, Typescript and another things...",
+  "author": {
+    "name": "Max Rogério",
+    "email": "max10rogerio@hotmail.com",
+    "url": "https://github.com/max10rogerio"
+  },
+  "license": "MIT",
+  "version": "0.0.1",
   "private": true,
-  "dependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.3.2",
-    "@testing-library/user-event": "^7.1.2",
-    "@types/jest": "^24.0.0",
-    "@types/node": "^12.0.0",
-    "@types/react": "^16.9.0",
-    "@types/react-dom": "^16.9.0",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1",
-    "typescript": "~3.7.2"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/max10rogerio/react-ui-boilerplate.git"
   },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+  "bugs": {
+    "url": "https://github.com/max10rogerio/react-ui-boilerplate/issues"
   },
-  "eslintConfig": {
-    "extends": "react-app"
+  "engines": {
+    "node": ">=10.15.x",
+    "yarn": ">=1.20.0"
   },
   "browserslist": {
     "production": [
@@ -34,6 +30,120 @@
       "last 1 chrome version",
       "last 1 firefox version",
       "last 1 safari version"
+    ]
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "dependencies": {
+    "@material-ui/core": "^4.10.0",
+    "@material-ui/icons": "^4.9.1",
+    "@reduxjs/toolkit": "^1.3.6",
+    "@types/react-redux": "^7.1.9",
+    "axios": "^0.19.2",
+    "history": "^4.10.1",
+    "notistack": "^0.9.16",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-hook-form": "^5.7.2",
+    "react-redux": "^7.2.0",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "3.4.1",
+    "redux-persist": "^6.0.0",
+    "typescript": "~3.7.2",
+    "yup": "^0.29.1"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "@types/jest": "^24.0.0",
+    "@types/node": "^12.0.0",
+    "@types/react": "^16.9.0",
+    "@types/react-dom": "^16.9.0",
+    "@types/react-router-dom": "^5.1.5",
+    "@typescript-eslint/eslint-plugin": "^3.0.2",
+    "@typescript-eslint/parser": "^3.0.2",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb": "^18.1.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-prettier": "^3.1.3",
+    "eslint-plugin-react": "^7.20.0",
+    "eslint-plugin-react-hooks": "^2.5.1",
+    "husky": "^4.2.5",
+    "prettier": "^2.0.5"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "prettier": {
+    "tabWidth": 2,
+    "trailingComma": "all",
+    "singleQuote": false,
+    "printWidth": 120
+  },
+  "eslintConfig": {
+    "globals": {
+      "process": true
+    },
+    "parser": "@typescript-eslint/parser",
+    "extends": [
+      "eslint:recommended",
+      "plugin:react/recommended",
+      "plugin:@typescript-eslint/recommended",
+      "prettier/@typescript-eslint",
+      "plugin:prettier/recommended"
+    ],
+    "plugins": [
+      "react",
+      "@typescript-eslint",
+      "prettier"
+    ],
+    "env": {
+      "browser": true,
+      "jasmine": true,
+      "jest": true,
+      "es6": true
+    },
+    "settings": {
+      "react": {
+        "pragma": "React",
+        "version": "detect"
+      }
+    },
+    "rules": {
+      "@typescript-eslint/no-explicit-any": "off",
+      "@typescript-eslint/no-empty-function": "off",
+      "@typescript-eslint/explicit-module-boundary-types": "off",
+      "@typescript-eslint/ban-types": "off",
+      "no-console": "error",
+      "prettier/prettier": [
+        "error"
+      ]
+    },
+    "overrides": [
+      {
+        "files": [
+          "**/*.tsx"
+        ],
+        "rules": {
+          "react/prop-types": "off",
+          "@typescript-eslint/explicit-function-return-type": "off"
+        }
+      }
     ]
   }
 }
