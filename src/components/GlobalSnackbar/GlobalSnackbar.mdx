@@ -1,0 +1,64 @@
+---
+name: GlobalSnackbar
+route: /components/global-snackbar 
+menu: Components
+---
+
+# GlobalSnackbar
+Call snackbar from anywhere, it's very simple!
+
+## Code Example
+```jsx
+import React from "react";
+
+import { Button } from "@material-ui/core"
+
+import { snack, showSnack } from "components/GlobalSnackbar";
+
+const MyComponent: React.FC = () => {
+  const customSnackHandleClick = () => {
+    showSnack("Custom Snack", {
+      action: (key) => <Button onClick={() => alert('Clicked')}>Click Here!</Button>
+    });
+  }
+
+  return (
+    <Button onClick={() => snack.info("Snack Info")}>Info</Button>
+    <Button onClick={() => snack.warning("Snack Warning")}>Warning</Button>
+    <Button onClick={() => snack.success("Snack Success") }>Success</Button>
+    <Button onClick={() => snack.error("Snack Error")}>Error</Button>
+    <Button onClick={customSnackHandleClick}>Custom snack</Button>
+  )
+}
+
+```
+
+## Basic Usage
+import { Props } from 'docz'
+import { ThemeProvider, Grid, Button } from "@material-ui/core";
+import { GlobalSnackbarProvider, GlobalSnackbar, snack } from "./GlobalSnackbar";
+
+<Playground>
+  <ThemeProvider>
+    <GlobalSnackbarProvider>
+      <GlobalSnackbar />
+      <Grid container spacing={2} justify="space-evenly">
+        <Grid item>
+          <Button variant="outlined" color="primary" onClick={() => snack.info("Snack Info")}>Info</Button>
+        </Grid>
+        <Grid item variant="outlined" color="primary">
+          <Button variant="outlined" color="primary" onClick={() => snack.warning("Snack Warning")}>Warning</Button>
+        </Grid>
+        <Grid item>
+          <Button variant="outlined" color="primary" variant="outlined" color="primary" onClick={() => snack.success("Snack Success") }>Success</Button>
+        </Grid>
+        <Grid item>
+          <Button variant="outlined" color="primary" onClick={() => snack.error("Snack Error")}>Error</Button>
+        </Grid>
+      </Grid>
+    </GlobalSnackbarProvider>
+  </ThemeProvider>
+</Playground>
+
+## Props
+This component don't have proporties because him only exports an object with functions for call the snackbar

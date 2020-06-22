@@ -21,26 +21,22 @@ export const ContextMenu: React.FC<{}> = ({ children }) => {
 
   let childrenArray = React.Children.toArray(children) as React.ReactElement<ContextMenuItemProps>[];
 
-  if (childrenArray.find((c) => c.type !== ContextMenuItem)) {
-    throw new Error("Children of ContextMenu should be a ContextMenuItem");
-  }
-
   if (isMobile) {
     childrenArray = childrenArray.map((c) => React.cloneElement(c, { fixed: false })) as React.ReactElement<
       ContextMenuItemProps
     >[];
   }
 
-  const buttons: React.ReactNode[] = childrenArray.filter((c) => c.props.fixed);
+  const buttons: React.ReactNode[] = childrenArray.filter((c) => c.props.fixed || c.props.fixed === undefined);
   const menu: React.ReactNode[] = childrenArray
-    .filter((c) => !c.props.fixed)
+    .filter((c) => c.props.fixed === false)
     .map((c) =>
       React.cloneElement(c, {
         onClick: (e: React.SyntheticEvent) => {
           handleClose();
           return c.props.onClick(e);
         },
-      }),
+      })
     );
 
   return (

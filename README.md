@@ -1,5 +1,5 @@
 ---
-name: Get Started
+name: Getting Started
 route: /
 ---
 <h1 align="center">Welcome to react-ui-boilerplate 👋</h1>
@@ -59,10 +59,10 @@ yarn run build:serve
 
 ## Tools
 
-- [Commit Lint](https://commitlint.js.org/#/)
-- [Husky](https://github.com/typicode/husky)
-- [Axios](https://github.com/axios/axios)
-- [Typescript](https://www.typescriptlang.org/)
+- [commit-lint](https://commitlint.js.org/#/)
+- [husky](https://github.com/typicode/husky)
+- [axios](https://github.com/axios/axios)
+- [typescript](https://www.typescriptlang.org/)
 - Material-UI
   - [material-ui/core](https://material-ui.com/)
   - [material-ui/icons](https://material-ui.com/components/material-icons/)
@@ -71,10 +71,11 @@ yarn run build:serve
   - [redux-sagas](https://redux-saga.js.org/)
   - [redux-persist](https://github.com/rt2zz/redux-persist)
   - [redux-devtools](https://github.com/reduxjs/redux-devtools)
-- [Prettier](https://prettier.io/)
-- [ESLINT](https://eslint.org/)
+- [prettier](https://prettier.io/)
+- [eslint](https://eslint.org/)
 - [cra-append-sw](https://github.com/tszarzynski/cra-append-sw)
 - [react-hook-form](https://react-hook-form.com/get-started)
+- [docz](https://www.docz.site/)
 
 ## Features
 

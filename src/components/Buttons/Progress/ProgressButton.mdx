@@ -1,18 +1,29 @@
 ---
 name: ProgressButton
-route: /buttons/progress-button
-menu: Buttons
+route: /components/buttons/progress-button
+menu: "Components"
 ---
+# ProgressButton
+A button with progress bar indicator
+
+## Code Example
+```jsx
+import { ProgressButton } from 'components/Buttons/ProgressButton';
+
+<ProgressButton variant="outlined" loading={true}/>
+```
+
+## Basic Usage
 import { Props } from 'docz'
 import { ProgressButton } from './ProgressButton.tsx';
 
-# Example
 <Playground>
   <div style="width: 100%; display: flex;">
     <ProgressButton variant="outlined" loading={false}/>
+    <div style="width: 50px;" />
     <ProgressButton variant="outlined" loading={true}/>
   </div>
 </Playground>
 
-### ProgressButton Props
+## Props
 <Props of={ProgressButton} />
