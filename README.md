@@ -14,7 +14,7 @@ route: /
     <img alt="Maintenance" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" />
   </a>
   <a href="https://github.com/max10rogerio/react-ui-boilerplate/blob/master/LICENSE.md" target="_blank">
-    <img alt="License: MIT" src="https://img.shields.io/github/license/max10rogerio/react-ui-boilerplate" />
+    <img src="https://camo.githubusercontent.com/3ccf4c50a1576b0dd30b286717451fa56b783512/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4c6963656e73652d4d49542d79656c6c6f772e737667" alt="License: MIT" data-canonical-src="https://img.shields.io/badge/License-MIT-yellow.svg" style="max-width:100%;">
   </a>
 </p>
 
@@ -22,83 +22,81 @@ route: /
 
 ### 🏠 [Homepage](https://github.com/max10rogerio/react-ui-boilerplate#readme)
 
-## Prerequisites
+## **Prerequisites**
 
 - node >=10.15.x
 - yarn >=1.20.0
 
-## Install
+## **Install**
 
 ```sh
 yarn install
 ```
 
-## Usage
+## **Usage**
 
 ```sh
 yarn run start
 ```
 
-## Run tests
+## **Run tests**
 
 ```sh
 yarn run test
 ```
 
-## Run build
+## **Run build**
 
 ```sh
 yarn run build
 ```
 
-## Run build with local server http
+## **Run build with local server http**
 
 ```sh
 yarn run build:serve
 ```
 
-## Tools
+## **Tools**
 
 - [commit-lint](https://commitlint.js.org/#/)
 - [husky](https://github.com/typicode/husky)
 - [axios](https://github.com/axios/axios)
 - [typescript](https://www.typescriptlang.org/)
-- Material-UI
-  - [material-ui/core](https://material-ui.com/)
-  - [material-ui/icons](https://material-ui.com/components/material-icons/)
-- Redux
-  - [redux-toolkit](https://redux-toolkit.js.org/)
-  - [redux-sagas](https://redux-saga.js.org/)
-  - [redux-persist](https://github.com/rt2zz/redux-persist)
-  - [redux-devtools](https://github.com/reduxjs/redux-devtools)
+- [material-ui/core](https://material-ui.com/)
+- [material-ui/icons](https://material-ui.com/components/material-icons/)
+- [redux-toolkit](https://redux-toolkit.js.org/)
+- [redux-sagas](https://redux-saga.js.org/)
+- [redux-persist](https://github.com/rt2zz/redux-persist)
+- [redux-devtools](https://github.com/reduxjs/redux-devtools)
 - [prettier](https://prettier.io/)
 - [eslint](https://eslint.org/)
 - [cra-append-sw](https://github.com/tszarzynski/cra-append-sw)
 - [react-hook-form](https://react-hook-form.com/get-started)
 - [docz](https://www.docz.site/)
 
-## Features
+## **Features**
 
 - Basic configurations for start project with react, redux, material-ui and typescript
 - Light theme and dark theme
 - Check update from service work
 
-## Author
+## **Author**
 
 👤 **Max Rogério**
 
 * Github: [@max10rogerio](https://github.com/max10rogerio)
 * LinkedIn: [@max-rogerio](https://linkedin.com/in/max-rogerio)
 
-## 🤝 Contributing
+## 🤝 **Contributing**
 
-Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/max10rogerio/react-ui-boilerplate/issues). You can also take a look at the [contributing guide](https://github.com/max10rogerio/react-ui-boilerplate/blob/master/CONTRIBUTING.md).
+Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/max10rogerio/react-ui-boilerplate/issues). You can also take a look at the [contributing guide](https://github.com/max10rogerio/react-ui-boilerplate/blob/master/.github/CONTRIBUTING.md).
 
-## Show your support
+## **Show your support**
 
 Give a ⭐️ if this project helped you!
 
-## 📝 License
+## 📝 **License**
 
 Copyright © 2020 [Max Rogério](https://github.com/max10rogerio).<br />
 This project is [MIT](https://github.com/max10rogerio/react-ui-boilerplate/blob/master/LICENSE.md) licensed.
