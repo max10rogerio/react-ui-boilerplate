@@ -38,6 +38,7 @@
     "serve": "serve -s build -l 4000",
     "build:serve": "yarn build && yarn serve",
     "test": "react-scripts test",
+    "test:coverage": "react-scripts test --coverage --watchAll=false",
     "eject": "react-scripts eject",
     "docz:dev": "docz dev",
     "docz:build": "docz build",
@@ -66,7 +67,8 @@
     "@commitlint/cli": "^8.3.5",
     "@commitlint/config-conventional": "^8.3.4",
     "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.3.2",
+    "@testing-library/react": "^10.3.0",
+    "@testing-library/react-hooks": "^3.3.0",
     "@testing-library/user-event": "^7.1.2",
     "@types/jest": "^24.0.0",
     "@types/node": "^12.0.0",
@@ -88,6 +90,7 @@
     "eslint-plugin-react-hooks": "^2.5.1",
     "husky": "^4.2.5",
     "prettier": "^2.0.5",
+    "react-test-renderer": "^16.13.1",
     "serve": "^11.3.2"
   },
   "husky": {
@@ -98,6 +101,15 @@
   "commitlint": {
     "extends": [
       "@commitlint/config-conventional"
+    ]
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/components/**/*.tsx",
+      "src/hooks/**/*.(tsx|ts)",
+      "!src/serviceWorker.ts",
+      "!src/react-app-env.d.ts",
+      "!src/index.tsx"
     ]
   },
   "prettier": {

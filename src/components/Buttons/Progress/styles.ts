@@ -1,8 +1,6 @@
 import { makeStyles } from "@material-ui/core";
 
-import { ProgressButtonColors } from "./index";
-
-export default makeStyles(({ palette }) => ({
+export default makeStyles(() => ({
   rootButton: {
     display: "flex",
     alignItems: "center",
@@ -11,7 +9,6 @@ export default makeStyles(({ palette }) => ({
     position: "relative",
   },
   buttonProgress: {
-    color: ({ color = "primary" }: { color: ProgressButtonColors }): string => palette[color].main,
     position: "absolute",
     top: "50%",
     left: "50%",

@@ -4,7 +4,6 @@ import Button, { ButtonProps } from "@material-ui/core/Button";
 import CircularProgress from "@material-ui/core/CircularProgress";
 
 import useStyles from "./styles";
-import { ProgressButtonColors } from "./index";
 
 interface Props extends ButtonProps {
   /**
@@ -19,14 +18,10 @@ interface Props extends ButtonProps {
    * Label button
    */
   label?: string;
-  /**
-   * Color of circular progress bar
-   */
-  color?: ProgressButtonColors;
 }
 
-export const ProgressButton: FC<Props> = ({ loading, disabled, label = "Submit", color = "primary", ...props }) => {
-  const classes = useStyles({ color });
+export const ProgressButton: FC<Props> = ({ loading, disabled, label = "Submit", ...props }) => {
+  const classes = useStyles();
 
   return (
     <div className={classes.rootButton}>

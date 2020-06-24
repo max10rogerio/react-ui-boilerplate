@@ -30,5 +30,17 @@
 			"export const $TM_FILENAME_BASE: FC<Props> = () => {",
 			"\treturn (\n\n\t);\n};"
 		]
+	},
+	"rtst": {
+		"description": "Create a structure for testing components",
+		"prefix": "rtst",
+		"body": [
+			"import React from \"react\";",
+			"import { render } from \"@testing-library/react\";",
+			"\ndescribe(\"description here\", () => {",
+			"\tit(\"should be able to ...\", () => {",
+			"\t});",
+			"});"
+		]
 	}
 }
