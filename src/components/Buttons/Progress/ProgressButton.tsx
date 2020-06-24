@@ -3,7 +3,7 @@ import React, { FC } from "react";
 import Button, { ButtonProps } from "@material-ui/core/Button";
 import CircularProgress from "@material-ui/core/CircularProgress";
 
-import useStyles from "./styles";
+import { useStyles } from "./styles";
 
 interface Props extends ButtonProps {
   /**

@@ -1,6 +1,6 @@
 import { makeStyles } from "@material-ui/core";
 
-export default makeStyles(() => ({
+export const useStyles = makeStyles(() => ({
   rootButton: {
     display: "flex",
     alignItems: "center",

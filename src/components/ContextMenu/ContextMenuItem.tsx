@@ -10,7 +10,7 @@ export interface ContextMenuItemProps {
   /**
    * When do you have many items in menu, this property only show where fixed is true (only in devices screen > tablet) and group the others items
    */
-  fixed?: boolean;
+  fixed: boolean;
   /**
    * Show a only icon when screen isn't mobile and show icon and title when screen is mobile
    */
@@ -23,7 +23,7 @@ export interface ContextMenuItemProps {
 
 export const ContextMenuItem: React.FC<ContextMenuItemProps> = React.forwardRef(
   ({ title, fixed, icon: Icon, onClick }, ref) => {
-    if (fixed || fixed === undefined) {
+    if (fixed) {
       return (
         <Tooltip title={title}>
           <IconButton onClick={onClick}>
