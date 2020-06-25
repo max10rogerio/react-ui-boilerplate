@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, Router, Switch } from "react-router-dom";
+import { Route, Router, Switch, Redirect } from "react-router-dom";
 
 import { history } from "./configs/history";
 
@@ -15,9 +15,10 @@ export const Routes = () => {
         <Main>
           <Switch>
             <Route exact path="/dashboard" component={Home} />
+            <Route path="*" component={() => <Redirect to="/" />} />
           </Switch>
         </Main>
-        <Route path="*" component={SignIn} />
+        <Route path="*" component={() => <Redirect to="/" />} />
       </Switch>
     </Router>
   );
