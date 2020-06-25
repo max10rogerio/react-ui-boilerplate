@@ -25,7 +25,7 @@
 		"prefix": "rtsx",
 		"body": [
 			"import React, { FC } from \"react\";",
-			"import { } from \"@material-ui/core\";\n",
+			"\nimport { } from \"@material-ui/core\";\n",
 			"export interface Props {\n\n}\n",
 			"export const $TM_FILENAME_BASE: FC<Props> = () => {",
 			"\treturn (\n\n\t);\n};"
