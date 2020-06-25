@@ -33,16 +33,24 @@ route: /
 yarn install
 ```
 
+># **REACT**
+
 ## **Usage**
 
 ```sh
-yarn run start
+yarn run dev
 ```
 
 ## **Run tests**
 
 ```sh
 yarn run test
+```
+
+## **Run test coverage**
+
+```sh
+yarn run test:coverage
 ```
 
 ## **Run build**
@@ -57,6 +65,23 @@ yarn run build
 yarn run build:serve
 ```
 
+># **DOCS**
+
+## **Run docs in dev mode**
+```sh
+yarn docz:dev
+```
+
+## **Run docs build**
+```sh
+yarn docz:build
+```
+
+## **Run docs build and start a local server http**
+```sh
+yarn docz:serve
+```
+
 ## **Tools**
 
 - [commit-lint](https://commitlint.js.org/#/)
@@ -65,6 +90,7 @@ yarn run build:serve
 - [typescript](https://www.typescriptlang.org/)
 - [material-ui/core](https://material-ui.com/)
 - [material-ui/icons](https://material-ui.com/components/material-icons/)
+- [notistack](https://iamhosseindhv.com/notistack)
 - [redux-toolkit](https://redux-toolkit.js.org/)
 - [redux-sagas](https://redux-saga.js.org/)
 - [redux-persist](https://github.com/rt2zz/redux-persist)
@@ -73,6 +99,7 @@ yarn run build:serve
 - [eslint](https://eslint.org/)
 - [cra-append-sw](https://github.com/tszarzynski/cra-append-sw)
 - [react-hook-form](https://react-hook-form.com/get-started)
+- [yup](https://github.com/jquense/yup)
 - [docz](https://www.docz.site/)
 
 ## **Features**
@@ -80,6 +107,9 @@ yarn run build:serve
 - Basic configurations for start project with react, redux, material-ui and typescript
 - Light theme and dark theme
 - Check update from service work
+- Most settings are within `package.json`, only unsupported packages do not have configuration files like: `doczrc.js`
+- Call `history` from anywhere
+- Display a `snackbar` from anywhere
 
 ## **Author**
 
