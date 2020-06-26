@@ -1,1 +1,1 @@
-export * from './GlobalSnackbar';
+export * from "./GlobalSnackbar";

@@ -21,7 +21,7 @@ export const Header: FC = () => {
   const isMobile = useMobile();
   const dispatch = useAppDispatch();
   const isDarkTheme = useAppSelector((state) => state.layout.isDarkTheme);
-  const ThemeIcon = useMemo(() => isDarkTheme ? SunIcon : MoonIcon, [isDarkTheme]);
+  const ThemeIcon = useMemo(() => (isDarkTheme ? SunIcon : MoonIcon), [isDarkTheme]);
 
   return (
     <div className={classes.root}>

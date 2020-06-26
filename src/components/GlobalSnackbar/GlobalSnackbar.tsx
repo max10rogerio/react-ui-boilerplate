@@ -36,7 +36,7 @@ export const GlobalSnackbar = () => {
 export const CloseSnackButton: FC<{ snackKey: string | number | undefined } & OptionsObject> = ({ snackKey }) => {
   const { closeSnackbar } = useSnackbar();
   return (
-    <IconButton size="small" color="inherit" onClick={() => { console.log('\n\n\n\n\npqpq'); closeSnackbar(snackKey) }}>
+    <IconButton size="small" color="inherit" onClick={() => closeSnackbar(snackKey)}>
       <CloseIcon />
     </IconButton>
   );

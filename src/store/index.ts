@@ -2,12 +2,11 @@ import { configureStore, getDefaultMiddleware } from "@reduxjs/toolkit";
 import { useDispatch, useSelector as useReduxSelector, TypedUseSelectorHook } from "react-redux";
 import { persistStore, persistReducer, FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER } from "redux-persist";
 import storage from "redux-persist/lib/storage";
-import createSagaMiddleware from 'redux-saga';
-
+import createSagaMiddleware from "redux-saga";
 
 import { rootReducer } from "./modules/root_reducer";
 
-const DEV_MODE = process.env.NODE_ENV === 'development';
+const DEV_MODE = process.env.NODE_ENV === "development";
 
 const persistedReducer = persistReducer(
   {
@@ -19,18 +18,21 @@ const persistedReducer = persistReducer(
 );
 
 const sagaMiddleware = createSagaMiddleware();
-const middlewares = [...getDefaultMiddleware({
-  serializableCheck: {
-    ignoredActions: [FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER],
-  }, thunk: false
-}), sagaMiddleware];
+const middlewares = [
+  ...getDefaultMiddleware({
+    serializableCheck: {
+      ignoredActions: [FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER],
+    },
+    thunk: false,
+  }),
+  sagaMiddleware,
+];
 
 export const store = configureStore({
   reducer: persistedReducer,
   devTools: DEV_MODE,
   middleware: middlewares,
 });
-
 
 export const persistor = persistStore(store);
 

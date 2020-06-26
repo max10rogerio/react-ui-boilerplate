@@ -2,12 +2,14 @@ import React from "react";
 import { render } from "@testing-library/react";
 
 import { ThemeProvider, createMuiTheme } from "@material-ui/core";
-import AddIcon from '@material-ui/icons/Add'
+import AddIcon from "@material-ui/icons/Add";
 
 import { ContextMenu } from "./ContextMenu";
 import { ContextMenuItem } from "./ContextMenuItem";
 
-const RenderItem = (props: any = {}) => <ContextMenuItem title="Test Item" icon={AddIcon} onClick={() => console.log('click')} {...props} />
+const RenderItem = (props: any = {}) => (
+  <ContextMenuItem title="Test Item" icon={AddIcon} onClick={() => null} {...props} />
+);
 
 describe("Components", () => {
   it("should be able to render ContextMenu", () => {
@@ -16,7 +18,7 @@ describe("Components", () => {
         <ContextMenu>
           <RenderItem />
         </ContextMenu>
-      </ThemeProvider>
+      </ThemeProvider>,
     );
 
     expect(container).toBeTruthy();

@@ -151,23 +151,15 @@
     "rules": {
       "@typescript-eslint/no-explicit-any": "off",
       "@typescript-eslint/no-empty-function": "off",
+      "@typescript-eslint/explicit-function-return-type": "off",
       "@typescript-eslint/explicit-module-boundary-types": "off",
       "@typescript-eslint/ban-types": "off",
       "no-console": "error",
+      "react/prop-types": "off",
+      "react/display-name": "off",
       "prettier/prettier": [
         "error"
       ]
-    },
-    "overrides": [
-      {
-        "files": [
-          "**/*.tsx"
-        ],
-        "rules": {
-          "react/prop-types": "off",
-          "@typescript-eslint/explicit-function-return-type": "off"
-        }
-      }
-    ]
+    }
   }
 }

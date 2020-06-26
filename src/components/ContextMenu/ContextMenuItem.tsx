@@ -46,6 +46,6 @@ export const ContextMenuItem: React.FC<ContextMenuItemProps> = React.forwardRef(
 
 ContextMenuItem.defaultProps = {
   fixed: true,
-}
+};
 
 ContextMenuItem.displayName = "ContextMenuItem";

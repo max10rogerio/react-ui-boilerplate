@@ -5,7 +5,7 @@ import VerticalDotsIcon from "@material-ui/icons/MoreVert";
 
 import { useMobile } from "hooks/useMobile";
 
-import { ContextMenuItemProps, ContextMenuItem } from "./ContextMenuItem";
+import { ContextMenuItemProps } from "./ContextMenuItem";
 
 export const ContextMenu: React.FC<{}> = ({ children }) => {
   const isMobile = useMobile();
@@ -36,7 +36,7 @@ export const ContextMenu: React.FC<{}> = ({ children }) => {
           handleClose();
           return c.props.onClick(e);
         },
-      })
+      }),
     );
 
   return (

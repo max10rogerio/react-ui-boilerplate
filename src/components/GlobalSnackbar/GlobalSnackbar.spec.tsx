@@ -1,9 +1,9 @@
 import React from "react";
-import { render, waitFor, fireEvent } from "@testing-library/react";
+import { render } from "@testing-library/react";
 
 import { ThemeProvider, createMuiTheme } from "@material-ui/core";
 
-import { GlobalSnackbarProvider, CloseSnackButton, showSnack, GlobalSnackbar, snack, getGlobalSnack } from "./GlobalSnackbar";
+import { GlobalSnackbarProvider, showSnack, GlobalSnackbar, snack, getGlobalSnack } from "./GlobalSnackbar";
 
 const InstanceSnackbar = ({ children }: { children?: React.ReactNode }) => {
   return (
@@ -14,7 +14,7 @@ const InstanceSnackbar = ({ children }: { children?: React.ReactNode }) => {
       </GlobalSnackbarProvider>
     </ThemeProvider>
   );
-}
+};
 
 describe("Components", () => {
   describe("GlobalSnackbar", () => {

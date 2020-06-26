@@ -1,10 +1,9 @@
 import { renderHook } from "@testing-library/react-hooks";
 
 import { useMobile } from "./useMobile";
-import { Theme } from "@material-ui/core";
 
 jest.mock("@material-ui/core", () => ({
-  useMediaQuery: (theme: Theme) => true,
+  useMediaQuery: () => true,
 }));
 
 describe("description here", () => {
