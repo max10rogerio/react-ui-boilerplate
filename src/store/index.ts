@@ -5,6 +5,7 @@ import storage from "redux-persist/lib/storage";
 import createSagaMiddleware from "redux-saga";
 
 import { rootReducer } from "./modules/root_reducer";
+import { rootSaga } from "./modules/root_saga";
 
 const DEV_MODE = process.env.NODE_ENV === "development";
 
@@ -35,6 +36,8 @@ export const store = configureStore({
 });
 
 export const persistor = persistStore(store);
+
+sagaMiddleware.run(rootSaga);
 
 export const useAppSelector: TypedUseSelectorHook<RootState> = useReduxSelector;
 export const useAppDispatch = () => useDispatch<AppDispatch>();
