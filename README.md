@@ -27,13 +27,6 @@ route: /
 - node >=10.15.x
 - yarn >=1.20.0
 
-## **!!! Note !!!**
-
-Create a `.env` file with the variable:
-```env
-SKIP_PREFLIGHT_CHECK=true
-```
-
 ## **Install**
 
 ```sh
@@ -76,7 +69,7 @@ yarn run build:serve
 
 - [commit-lint](https://commitlint.js.org/#/)
 - [husky](https://github.com/typicode/husky)
-- [axios](https://github.com/axios/axios)v
+- [axios](https://github.com/axios/axios)
 - [typescript](https://www.typescriptlang.org/)
 - [material-ui/core](https://material-ui.com/)
 - [material-ui/icons](https://material-ui.com/components/material-icons/)
