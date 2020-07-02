@@ -9,11 +9,11 @@ import { useConfirmDialog } from "hooks/useDialogConfirm";
 export const Home = () => {
   const isMobile = useMobile();
   const { show: showDialog, RenderDialog: Dialog } = useDialog({
-    title: "Confirm dialog Example",
+    title: "Normal dialog Example",
   });
   const { show: showConfirmDialog, RenderDialog: ConfirmDialog } = useConfirmDialog({
     defaults: {
-      title: "Confirm action",
+      title: "Confirm Dialog",
     },
     onConfirmed: (payload, hide) => {
       setTimeout(() => {
@@ -27,7 +27,7 @@ export const Home = () => {
       <ConfirmDialog />
       <Dialog>
         <DialogContent>
-          <Typography>This is a confirm a confirm dialog</Typography>
+          <Typography>This is a normal dialog</Typography>
         </DialogContent>
       </Dialog>
       <Container>

@@ -72,23 +72,6 @@ yarn run build
 yarn run build:serve
 ```
 
-># **DOCS**
-
-## **Run docs in dev mode**
-```sh
-yarn docz:dev
-```
-
-## **Run docs build**
-```sh
-yarn docz:build
-```
-
-## **Run docs build and start a local server http**
-```sh
-yarn docz:serve
-```
-
 ## **Tools**
 
 - [commit-lint](https://commitlint.js.org/#/)
@@ -107,14 +90,13 @@ yarn docz:serve
 - [cra-append-sw](https://github.com/tszarzynski/cra-append-sw)
 - [react-hook-form](https://react-hook-form.com/get-started)
 - [yup](https://github.com/jquense/yup)
-- [docz](https://www.docz.site/)
 
 ## **Features**
 
 - Basic configurations for start project with react, redux, material-ui and typescript
 - Light theme and dark theme
 - Check update from service work
-- Most settings are within `package.json`, only unsupported packages do not have configuration files like: `doczrc.js`
+- Most settings are within `package.json`
 - Call `history` from anywhere
 - Display a `snackbar` from anywhere
 
