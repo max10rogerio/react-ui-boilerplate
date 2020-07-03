@@ -1,7 +1,3 @@
----
-name: Getting Started
-route: /
----
 <h1 align="center">Welcome to react-ui-boilerplate 👋</h1>
 <p>
   <img alt="Version" src="https://img.shields.io/badge/version-0.0.1-blue.svg?cacheSeconds=2592000" />
