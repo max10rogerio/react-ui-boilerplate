@@ -6,7 +6,7 @@ export interface LayoutState {
   sidebar: {
     isOpen: boolean;
   };
-  isDarkTheme: boolean;
+  isDarkTheme?: boolean;
 }
 
 const INITIAL_STATE: LayoutState = {
@@ -28,7 +28,7 @@ export const reducers = createReducer(INITIAL_STATE, {
   [LayoutActionsTypes.THEME_TOGGLE]: (state) => {
     return {
       ...state,
-      isDarkTheme: !state.isDarkTheme,
+      isDarkTheme: state.isDarkTheme ? undefined : state.isDarkTheme === undefined ? false : true,
     };
   },
 });

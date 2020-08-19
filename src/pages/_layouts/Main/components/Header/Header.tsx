@@ -5,6 +5,7 @@ import { IconButton, Toolbar, AppBar, Tooltip, Box, Avatar } from "@material-ui/
 import ExitToAppIcon from "@material-ui/icons/ExitToApp";
 import MoonIcon from "@material-ui/icons/Brightness3";
 import SunIcon from "@material-ui/icons/Brightness5";
+import AutoDarkIcon from "@material-ui/icons/BrightnessAuto";
 
 import { useAppSelector, useAppDispatch } from "store";
 import { toggleTheme } from "store/modules/layout";
@@ -21,7 +22,9 @@ export const Header: FC = () => {
   const isMobile = useMobile();
   const dispatch = useAppDispatch();
   const isDarkTheme = useAppSelector((state) => state.layout.isDarkTheme);
-  const ThemeIcon = useMemo(() => (isDarkTheme ? SunIcon : MoonIcon), [isDarkTheme]);
+  const ThemeIcon = useMemo(() => (isDarkTheme === undefined ? AutoDarkIcon : !isDarkTheme ? SunIcon : MoonIcon), [
+    isDarkTheme,
+  ]);
 
   return (
     <div className={classes.root}>
@@ -36,7 +39,7 @@ export const Header: FC = () => {
             </Tooltip>
           </Link>
           <Title />
-          <Tooltip title={isDarkTheme ? "Light Theme" : "Dark Theme"}>
+          <Tooltip title={isDarkTheme === undefined ? "Auto Theme" : !isDarkTheme ? "Light Theme" : "Dark Theme"}>
             <IconButton color="inherit" onClick={() => dispatch(toggleTheme())}>
               <ThemeIcon />
             </IconButton>
