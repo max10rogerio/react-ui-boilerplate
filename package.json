@@ -39,10 +39,7 @@
     "build:serve": "yarn build && yarn serve",
     "test": "react-scripts test --env=jsdom-fourteen --verbose",
     "test:coverage": "yarn test --coverage --watchAll=false",
-    "eject": "react-scripts eject",
-    "docz:dev": "docz dev",
-    "docz:build": "docz build",
-    "docz:serve": "docz build && docz serve"
+    "eject": "react-scripts eject"
   },
   "dependencies": {
     "@material-ui/core": "^4.10.0",

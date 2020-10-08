@@ -1,13 +1,6 @@
 import { createReducer } from "@reduxjs/toolkit";
 
-import { LayoutActionsTypes } from "./actions";
-
-export interface LayoutState {
-  sidebar: {
-    isOpen: boolean;
-  };
-  isDarkTheme?: boolean;
-}
+import { LayoutActionsTypes, LayoutState } from "./types";
 
 const INITIAL_STATE: LayoutState = {
   sidebar: {

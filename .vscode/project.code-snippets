@@ -1,46 +1,25 @@
 {
-	"docz": {
-		"description": "Create a docz base file",
-		"prefix": "docz",
-		"body": [
-			"---",
-			"name: $TM_FILENAME_BASE",
-			"route: ",
-			"menu: ",
-			"---\n",
-			"# $TM_FILENAME_BASE",
-			"--Your description here\n",
-			"## Code Example",
-			"```jsx\n\n```\n",
-			"## Basic Usage",
-			"import { Props } from \"docz\"",
-			"import { $TM_FILENAME_BASE } from \"./$TM_FILENAME_BASE.tsx\"\n",
-			"<Playground>\n\t<$TM_FILENAME_BASE />\n</Playground>",
-			"\n## Props",
-			"<Props of={$TM_FILENAME_BASE} />\n",
-		]
-	},
-	"rtsx": {
-		"description": "Create a typescript functional component",
-		"prefix": "rtsx",
-		"body": [
-			"import React, { FC } from \"react\";",
-			"\nimport { } from \"@material-ui/core\";\n",
-			"export interface Props {\n\n}\n",
-			"export const $TM_FILENAME_BASE: FC<Props> = () => {",
-			"\treturn (\n\n\t);\n};"
-		]
-	},
-	"rtst": {
-		"description": "Create a structure for testing components",
-		"prefix": "rtst",
-		"body": [
-			"import React from \"react\";",
-			"import { render } from \"@testing-library/react\";",
-			"\ndescribe(\"description here\", () => {",
-			"\tit(\"should be able to ...\", () => {",
-			"\t});",
-			"});"
-		]
-	}
+  "rtsx": {
+    "description": "Create a typescript functional component",
+    "prefix": "rtsx",
+    "body": [
+      "import React, { FC } from \"react\";",
+      "\nimport { } from \"@material-ui/core\";\n",
+      "export interface Props {\n\n}\n",
+      "export const $TM_FILENAME_BASE: FC<Props> = () => {",
+      "\treturn (\n\n\t);\n};"
+    ]
+  },
+  "rtst": {
+    "description": "Create a structure for testing components",
+    "prefix": "rtst",
+    "body": [
+      "import React from \"react\";",
+      "import { render } from \"@testing-library/react\";",
+      "\ndescribe(\"description here\", () => {",
+      "\tit(\"should be able to ...\", () => {",
+      "\t});",
+      "});"
+    ]
+  }
 }
